@@ -7,6 +7,8 @@ A single `SKILL.md` that gives any AI coding agent hard safety guardrails: confi
 
 Most agent accidents are not model failures. They are missing guardrails: a `rm -rf` nobody approved, a force push to a shared branch, a `.env` file committed "for convenience". This skill closes those holes with one file.
 
+If this skill protects your repos, [star it](https://github.com/clements23/agent-guardrail-skill/stargazers) so other agent users find it before their first accident.
+
 ## Install
 
 ```bash
@@ -40,6 +42,20 @@ System prompts get truncated, forgotten in long sessions, and differ per tool. A
 ## Customize
 
 Edit `skills/agent-guardrail/SKILL.md` directly. Add project-specific rules (allowed commands, deploy targets, review requirements) in a new numbered section. Keep each rule imperative and unambiguous: agents follow rules they can check mechanically.
+
+## FAQ
+
+**Which agents does it work with?**
+Any agent that loads `SKILL.md` packages: Claude Code, OpenAI Codex, Cursor and Gemini CLI are the main ones.
+
+**Is this a system prompt?**
+No. It is a skill file stored in your repository, versioned with your code and loaded on demand.
+
+**Can I use it commercially?**
+Yes, the skill is MIT licensed.
+
+**Does it slow the agent down?**
+No. Skills load only when relevant to the task, and this one is a short rule list.
 
 ## Related projects
 
