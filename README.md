@@ -10,7 +10,7 @@ Most agent accidents are not model failures. They are missing guardrails: a `rm 
 ## Install
 
 ```bash
-npx skills-install clements23/agent-guardrail-skill
+npx -y github:clements23/skills-install clements23/agent-guardrail-skill
 ```
 
 Or manually copy `skills/agent-guardrail/` into your agent's skills directory:
